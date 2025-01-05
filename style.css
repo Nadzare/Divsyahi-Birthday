@@ -1,0 +1,1316 @@
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+
+@font-face {
+    font-family: GreatVibes-Regular;
+    src: url("font/GreatVibes-Regular.ttf");
+}
+@font-face {
+    font-family: helvetica-light;
+    src: url("font/helvetica-light.ttf");
+}
+
+
+.font-esthetic {
+    font-family: GreatVibes-Regular;
+}
+
+
+/* .font-arabic {
+    font-family: 'Noto Naskh Arabic', serif !important;
+}
+
+.font-formal{
+    font-family: Arial, Helvetica, sans-serif;
+} */
+
+body {
+  height: 100vh;
+  overflow-y: auto; /* Hilangkan scrollbar */
+  position: relative; /* Pastikan posisi elemen tetap */
+}
+
+body::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
+
+.container {
+  background-color: black;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.loading-page {
+
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("images/bg.png"); /* Ganti dengan path gambar Anda */
+  background-size: cover; /* Membuat gambar menutupi seluruh area */
+  background-position: center; /* Memusatkan gambar */
+  background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#svg {
+  height: 150px;
+  width: 150px;
+  stroke: #333;
+  fill-opacity: 0;
+  stroke-width: 3px;
+  stroke-dasharray: 4500;
+  animation: draw 8s ease;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 4500;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.name-container {
+  height: 30px;
+  overflow: hidden;
+}
+
+.logo-name {
+  color: #333;
+  font-size: 20px;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+
+
+
+
+
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    scroll-behavior: smooth;
+  }
+  
+  h1, h2 {
+    margin: 0;
+  }
+  
+  .container-welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  #welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+  }
+
+
+  .container-welcome h1 {
+    font-size: 4rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: GreatVibes-Regular;
+    color: #555;
+  }
+  
+  
+  .image-wrapper {
+    width: 235px;
+    height: 235px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    outline: #c2c2c2 solid 2px;
+  }
+  
+  .image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+
+  .container-welcome h2 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: GreatVibes-Regular;
+    color: #333;
+  }
+
+
+  .btn {
+    padding: 10px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+    /* outline: #c2c2c2 solid 1px; */
+    transition: all 0.3s ease;
+    
+  }
+  
+  .btn:hover {
+    background-color: #838383;
+    transform: scale(1.05);
+  }
+  
+  #main-content {
+    display: none;
+    /* padding: 50px 20px; */
+    background-color: #fff;
+  }
+
+  #open-invitation {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+  }
+  
+  #open-invitation::before {
+    content: '📩';
+    font-size: 1.2rem;
+  }
+
+
+
+
+
+
+
+
+
+
+  /* Main content */
+  /* CSS Styles for the Home Section */
+/* Background dan Layout */
+.home-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #f8f9fa; /* Light background */
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: url('images/bg.png') no-repeat center center;
+    background-size: cover;
+    opacity: 0.3;
+    z-index: 1;
+  }
+  
+  /* Konten Wrapper */
+  .content-wrapper {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+    padding: 2rem;
+    color: #333;
+  }
+  
+  /* Judul Utama */
+  .title {
+    font-family: GreatVibes-Regular;
+    font-size: 3.2rem;
+    font-weight: 500;
+    margin: 1rem 0;
+    color: #333;
+    text-shadow: 0 2px 4px rgba(72, 72, 72, 0.3);
+    letter-spacing: 1px;
+  }
+  
+  /* Gambar Profil */
+  .profile-image-wrapper {
+    width: 235px;
+    height: 235px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 3px solid #fff;
+}
+
+.profile-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+  
+  /* Subtitle */
+  .subtitle {
+    font-family: GreatVibes-Regular;
+    font-size: 2.8rem;
+    font-weight: 500;
+    margin: 2rem 0;
+    color: #333;
+    text-shadow: 0 2px 4px rgba(72, 72, 72, 0.3);
+  }
+  
+  /* Tanggal */
+  .date {
+    font-size: 1.25rem;
+    color: #525252;
+    margin: 0.5rem 0;
+  }
+  
+  /* Tombol Save The Date */
+  .save-date-button {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #6d6d6d;
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+  }
+  
+  .save-date-button:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+  }
+  
+  /* Scroll Indicator */
+  .scroll-indicator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  .mouse {
+    width: 25px;
+    height: 40px;
+    border: 2px solid #adb5bd;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .scroll-wheel {
+    width: 5px;
+    height: 8px;
+    background-color: #333;
+    border-radius: 50%;
+    animation: scroll 1.5s infinite;
+  }
+  
+  @keyframes scroll {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+  }
+  
+  .scroll-text {
+    font-size: 0.95rem;
+    color: #6c757d;
+  }
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+/* mempelai */
+#bride {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 100vh;
+}
+
+#bride p {
+    margin-bottom: 5px;
+}
+
+.font-arabic {
+    font-family: 'Traditional Arabic', sans-serif;
+    color: #555;
+}
+
+.font-esthetic {
+    font-family: GreatVibes-Regular;
+    color: #333;
+    text-shadow: 0 2px 4px rgba(72, 72, 72, 0.3);
+}
+
+.love-icon {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    fill: rgba(255, 192, 203, 0.5);
+    animation: pulse 2s infinite;
+}
+
+
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+.img-center-crop {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-center-crop:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.3);
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in-right {
+    transform: translateX(50px);
+}
+
+.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.95);
+    color: #333;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 1000;
+    animation: fadeInPopup 0.5s ease;
+}
+
+@keyframes fadeInPopup {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.popup img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #f8f9fa;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.popup .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #aaa;
+    transition: color 0.3s ease;
+}
+
+.popup .close:hover {
+    color: #555;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
+}
+
+/* Additional Romantic Touches */
+button {
+    background-color: #ffccd5;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffb3c1;
+}
+
+
+
+
+.brides-section {
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .font-arabic {
+    font-family: 'Traditional Arabic', serif;
+    color: #555;
+    font-size: 1.5rem;
+  }
+  
+  .font-esthetic {
+    font-family: GreatVibes-Regular;
+    font-weight: 500;
+    color: #333;
+    font-size: 2rem;
+  }
+  
+  .img-center-crop {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .img-center-crop:hover {
+    transform: scale(1.1);
+  }
+  
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 1000;
+  }
+  
+  .popup img {
+    width: 300px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .popup .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    color: #aaa;
+    cursor: pointer;
+  }
+  
+  .popup .close:hover {
+    color: #333;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
+  }
+  
+  /* Animation for Popup */
+  @keyframes fadeInPopup {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .popup.active {
+    display: block;
+    animation: fadeInPopup 0.3s ease-out;
+  }
+  
+  .overlay.active {
+    display: block;
+  }
+
+
+
+
+
+
+/* Navbar Utama */
+.fixed-navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+/* List Item */
+.fixed-navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* List Individual Items */
+.fixed-navbar li {
+    margin: 0;
+    flex: 1;
+    text-align: center;
+}
+
+/* Link Style */
+.fixed-navbar a {
+    text-decoration: none;
+    color: #838383;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.fixed-navbar a:hover {
+    color: #333;
+}
+
+/* Icon Style */
+.fixed-navbar i {
+    font-size: 20px;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Animation */
+.fixed-navbar a:hover i {
+    transform: scale(1.2);
+}
+
+/* Responsif untuk Layar Lebar */
+@media screen and (min-width: 768px) {
+    .fixed-navbar a {
+        font-size: 16px;
+    }
+
+    .fixed-navbar i {
+        font-size: 24px;
+    }
+}
+
+/* Responsif untuk Layar Kecil */
+@media screen and (max-width: 480px) {
+    .fixed-navbar {
+        padding: 8px 0;
+    }
+
+    .fixed-navbar a {
+        font-size: 12px;
+    }
+
+    .fixed-navbar i {
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+
+
+/* ayat */
+#ayat-section {
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  height: 100vh;
+  width: 100%;
+  position: relative; /* Untuk membuat pseudoelement menempel di section */
+  background: url('images/bg2.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  color: #fff;
+}
+
+#ayat-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0)); /* Gradasi putih */
+  z-index: 1; /* Membawa layer ke atas */
+  pointer-events: none; /* Membuat lapisan tidak mengganggu interaksi */
+}
+
+#ayat-section > * {
+  position: relative; /* Memastikan konten di atas lapisan gradasi */
+  z-index: 2;
+}
+
+  
+  .ayat-heading {
+    font-family: GreatVibes-Regular;
+    font-weight: 500;
+    font-size: 3rem;
+    color: #333; /* Warna putih yang lebih lembut */
+    text-shadow: 0 2px 4px rgba(72, 72, 72, 0.3);
+    margin-bottom: 40px;
+    letter-spacing: 1.5px;
+
+}
+  
+  /* Ayat Container */
+  .ayat-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+  
+  /* Ayat Box Styling */
+  .ayat {
+    background: rgba(255, 255, 255, 0.5); /* Latar belakang transparan */
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    max-width: 700px;
+    text-align: left;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
+  }
+  
+  .ayat p {
+    font-size: 1.4em;
+    line-height: 1.8;
+    color: #333;
+    font-family: 'helvetica', sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  .ayat a {
+    font-weight: bold;
+    font-size: 1em;
+    color: #838383;
+    text-decoration: none;
+    margin-top: 15px;
+    display: inline-block;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+  }
+  
+  .ayat a:hover {
+    text-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
+    color: #838383;
+  }
+  
+  /* Active State */
+  .ayat.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #ayat-section {
+      background-position: center top;
+    }
+  
+    .ayat {
+      max-width: 90%;
+      padding: 20px;
+    }
+  
+    .ayat p {
+      font-size: 1.2em;
+    }
+  
+    .ayat-heading {
+      font-size: 1.8em;
+    }
+  }
+  
+
+
+
+
+
+
+  /* Tanggal */
+
+ /* Section Styling */
+#wedding-date {
+  text-align: center;
+  padding: 60px 30px;
+  background: linear-gradient(to bottom, #ffffff, #f9f9f9);
+  border-radius: 30px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+/* Title Styling */
+.title-wedding-date {
+  font-family: GreatVibes-Regular;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #333;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+/* Countdown Timer Styling */
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.countdown-item {
+  background: linear-gradient(to bottom, #ffffff, #f1f1f1);
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: all 0.4s ease-in-out;
+}
+
+.countdown-item:hover {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  transform: scale(1.08);
+}
+
+.countdown-item span {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+  display: block;
+}
+
+.countdown-item p {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #6c757d;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Event Details Styling */
+.event-details p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.event-details h2 {
+  font-family: GreatVibes-Regular;
+  font-size: 2.5rem;
+  color: #333;
+  font-weight: 500;
+  margin: 20px 0 10px;
+  text-shadow: 0 2px 4px rgba(72, 72, 72, 0.3);
+}
+
+.event-details h3 {
+  font-family: GreatVibes-Regular;
+  font-size: 2.5rem;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+/* Maps Button Styling */
+.maps-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  color: #fff;
+  background-color: #838383;
+  border-radius: 15px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 8px 20px rgba(65, 65, 65, 0.4);
+}
+
+.maps-button:hover {
+  background: linear-gradient(to right, #393939, #646464);
+  box-shadow: 0 10px 25px rgba(66, 66, 66, 0.6);
+  transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+ 
+
+  .title-wedding-date {
+    font-size: 2.5rem;
+  }
+
+  .event-details p {
+    font-size: 1rem;
+  }
+
+  .maps-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .countdown-timer {
+    justify-content: center; /* Item diratakan ke tengah untuk layar kecil */
+    gap: 15px;
+  }
+
+  .countdown-item {
+    width: 22%; /* Lebar lebih fleksibel untuk menyesuaikan tampilan */
+    min-width: 80px;
+  }
+
+  .countdown-item span {
+    font-size: 2rem;
+  }
+
+  .countdown-item p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .countdown-timer {
+    gap: 10px;
+  }
+
+  .countdown-item {
+    width: 25%; /* Elemen lebih kecil untuk layar ponsel */
+    min-width: 70px;
+  }
+
+  .countdown-item span {
+    font-size: 1.8rem;
+  }
+
+  .countdown-item p {
+    font-size: 0.7rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* Gallery */
+#gallery {
+  text-align: center;
+  padding: 20px;
+}
+
+#gallery h1 {
+  font-family: GreatVibes-Regular;
+  font-weight: 500;
+  font-size: 3em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.gallery-item {
+  flex: 1 1 calc(33.333% - 30px);
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+  filter: brightness(0.8);
+}
+
+@media (max-width: 768px) {
+  .gallery-item {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-item {
+    flex: 1 1 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* Greetings Section */
+#greetings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  background-color: #fefefe; /* Soft white background */
+}
+
+.love-gift, .comments {
+  width: 100%;
+  max-width: 70%; /* Lebih lebar untuk tampilan besar */
+  margin-bottom: 30px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  padding: 30px;
+  text-align: center;
+  border: 1px solid #ececec;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.love-gift:hover, .comments:hover {
+  transform: scale(1.02); /* Sedikit zoom saat hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.love-gift h2, .comments h2 {
+  font-family: GreatVibes-Regular;
+  font-weight: 500;
+  font-size: 2.2em;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.love-gift p, .comments label {
+  text-align: left;
+  color: #838383; /* Subtle grey for text */
+  font-size: 1em;
+}
+
+.love-gift p {
+  text-align: center;
+}
+
+.name-rek{
+  text-align: left;
+}
+
+.gift-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 1px solid #f0f0f0;
+  border-radius: 12px;
+  background-color: #fff;
+  transition: transform 0.2s ease;
+}
+
+.gift-card:hover {
+  transform: translateY(-5px); /* Slight hover effect */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.gift-card img {
+  width: 50px;
+  height: auto;
+}
+
+.gift-card div {
+  text-align: left;
+  color: #333;
+}
+
+.copy-btn {
+  padding: 10px 15px;
+  border: none;
+  background-color: #838383; /* Subtle grey for button */
+  color: #fff;
+  border-radius: 8px;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.copy-btn:hover {
+  background-color: #333; /* Darker grey on hover */
+  transform: scale(1.05);
+}
+
+.comments form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#comments-form input, #comments-form select, #comments-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1em;
+  background-color: #fafafa;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+#comments-form input:focus, #comments-form select:focus, #comments-form textarea:focus {
+  border-color: #838383; /* Highlighted border */
+  outline: none;
+}
+
+.submit-btn {
+  padding: 12px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #838383; /* Softer hover color */
+  transform: translateY(-3px); /* Slight elevation */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .love-gift, .comments {
+    max-width: 90%; /* Mengurangi lebar untuk layar tablet */
+    padding: 20px;
+  }
+
+  .love-gift h2, .comments h2 {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .gift-card {
+    flex-direction: column; /* Susunan vertikal untuk layar kecil */
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .gift-card img {
+    width: 40px;
+  }
+
+  .copy-btn {
+    font-size: 0.8em;
+  }
+
+  .love-gift, .comments {
+    padding: 15px;
+  }
+
+  .love-gift h2, .comments h2 {
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 480px) {
+  #greetings {
+    padding: 15px; /* Mengurangi padding untuk layar kecil */
+  }
+
+  .love-gift, .comments {
+    padding: 10px;
+    max-width: 100%; /* Maksimalkan lebar */
+  }
+
+  .love-gift h2, .comments h2 {
+    font-size: 1.5em;
+  }
+
+  #comments-form input, #comments-form select, #comments-form textarea {
+    font-size: 0.9em; /* Sedikit lebih kecil */
+  }
+
+  .submit-btn {
+    font-size: 1em;
+  }
+}
+
+
+
+
+
+
+/* sound */
+.audio-control {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background-color: #838383;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.audio-control:hover {
+  transform: scale(1.1);
+  background-color: #cfcfcf;
+}
+
+.audio-control i {
+  font-size: 14px;
+  color: #fff;
+}
+
+.audio-control.active {
+  background-color: #333; /* Hijau untuk musik aktif */
+  color: white;
+}

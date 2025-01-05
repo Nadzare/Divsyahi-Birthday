@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan||Nandit & Anik</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&display=swap">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container-welcome" id="container-welcome">
+            <h1>The Wedding Of</h1>
+            <div class="image-wrapper">
+              <img src="images/bg.png" alt="Nandit & Anik">
+            </div>
+            <h2>Nandit & Anik</h2>
+            <button id="open-invitation" class="btn" onclick="playMusic()">Open Invitation</button>
+    </div>
+
+
+
+    <section id="main-content">
+    
+        <section id="home" class="home-section">
+            <div class="background-image"></div>
+          
+            <div class="content-wrapper">
+              <h1 class="title">Undangan Pernikahan</h1>
+              <div class="profile-image-wrapper">
+                <img src="images/bg.png" alt="bg" class="profile-image" id="profile-image">
+            </div>
+              <h2 class="subtitle">Nandit & Anik</h2>
+              <p class="date" id="date-wed">Rabu, 22 Januari 2025</p>
+              <a class="save-date-button" target="_blank" href="https://calendar.app.google/uWhTb4ueUviYrB5g8">
+                🗓️ Save The Date
+              </a>
+              <div class="scroll-indicator">
+                <div class="mouse">
+                  <div class="scroll-wheel"></div>
+                </div>
+                <p class="scroll-text">Scroll Down</p>
+              </div>
+            </div>
+          </section>
+          
+          
+          <section id="bride" class="bride-section">
+            <h2 class="font-arabic">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</h2>
+            <h2 class="font-esthetic">Assalamualaikum Warahmatullahi Wabarakatuh</h2>
+            <p>Tanpa mengurangi rasa hormat, kami mengundang Anda untuk menghadiri acara pernikahan kami:</p>
+          
+            <div class="fade-in groom">
+              <img src="images/nandit.png" alt="nandit" class="img-center-crop" onclick="showPopup('./images/nandit.png')">
+              <h2 class="font-esthetic">Kaisara Pinandit Firsti</h2>
+              <p>Putra ke-1 dari<br>Bapak Margo Rubedo dan Ibu Asri Satriyani</p>
+            </div>
+          
+            <h2 class="font-esthetic">&amp;</h2>
+          
+            <div class="fade-in bride">
+              <img src="images/anik.png" alt="anik" class="img-center-crop" onclick="showPopup('./images/anik.png')">
+              <h2 class="font-esthetic">Kholifatun Nikmah</h2>
+              <p>Putri ke-3 dari<br>Bapak Tarwin dan Ibu Duryati</p>
+            </div>
+              
+          </section>
+          
+          <div class="overlay" id="overlay" onclick="hidePopup()"></div>
+          <div class="popup" id="popup">
+            <span class="close" onclick="hidePopup()">&times;</span>
+            <img id="popup-image" src="" alt="Popup Image">
+          </div>
+
+
+
+          
+
+          <section id="ayat-section">
+            <h2 class="ayat-heading">Allah Subhanahu Wa Ta'ala berfirman</h2>
+            <div class="ayat-container">
+              <div class="ayat ayat-slide-in">
+                <p>Dan segala sesuatu Kami ciptakan berpasang-pasangan agar kamu mengingat (kebesaran Allah).</p>
+                <a href="https://quran.com/adh-dhariyat/49" target="_blank">QS. Adh-Dhariyat: 49</a>
+              </div>
+              <div class="ayat ayat-slide-in">
+                <p>Dan sesungguhnya Dialah yang menciptakan pasangan laki-laki dan perempuan,</p>
+                <a href="https://quran.com/an-najm/45" target="_blank">QS. An-Najm: 45</a>
+              </div>
+            </div>
+          </section>
+          
+          
+
+
+
+          <section id="wedding-date">
+            <h1 class="title-wedding-date">Moment Bahagia</h1>
+            <div class="countdown-timer">
+              <div class="countdown-item">
+                <span id="days">16</span>
+                <p>Hari</p>
+              </div>
+              <div class="countdown-item">
+                <span id="hours">9</span>
+                <p>Jam</p>
+              </div>
+              <div class="countdown-item">
+                <span id="minutes">41</span>
+                <p>Menit</p>
+              </div>
+              <div class="countdown-item">
+                <span id="seconds">50</span>
+                <p>Detik</p>
+              </div>
+            </div>
+          
+            <div class="event-details">
+              <p>Dengan memohon rahmat dan ridho Allah Subhanahu Wa Ta'ala, insyaAllah kami akan menyelenggarakan acara:</p>
+              <h2>Akad</h2>
+              <p>Pukul 09.00 WIB - Selesai</p>
+              <h2>Resepsi</h2>
+              <p>Pukul 10.00 WIB - Selesai</p>
+              <p>Demi kehangatan bersama, kami memohon kesediaan Anda untuk mengenakan dress code berikut:</p>
+              <h3>Betaso</h3>
+              <p>Pakaian Bebas Tapi Sopan</p>
+              <a href="https://goo.gl/maps" target="_blank" class="maps-button">Lihat Google Maps</a>
+              <p>RT 03 RW 02, Desa Petahunan, Kec. Pekuncen, Kab. Banyumas, Jawa Tengah 53164.</p>
+            </div>
+          </section>
+          
+
+
+
+
+ 
+        <section id="gallery">
+          <h1 class="gallery-title">Galeri Kita</h1>
+          <div class="gallery-container">
+            <div class="gallery-item"><img src="images/cr1.JPG" alt="Foto 1"></div>
+            <div class="gallery-item"><img src="images/cr2.JPG" alt="Foto 2"></div>
+            <div class="gallery-item"><img src="images/cr3.JPG" alt="Foto 3"></div>
+            <div class="gallery-item"><img src="images/cr4.JPG" alt="Foto 4"></div>
+            <div class="gallery-item"><img src="images/cr5.JPG" alt="Foto 5"></div>
+            <div class="gallery-item"><img src="images/cr6.JPG" alt="Foto 6"></div>
+            <div class="gallery-item"><img src="images/cr7.JPG" alt="Foto 7"></div>
+            <div class="gallery-item"><img src="images/cr8.JPG" alt="Foto 8"></div>
+            <div class="gallery-item"><img src="images/cr9.JPG" alt="Foto 9"></div>
+          </div>
+        </section>
+
+
+
+
+        <section id="greetings">
+          <div class="love-gift">
+            <h2>Love Gift</h2>
+            <p>Dengan hormat, bagi Anda yang ingin memberikan tanda kasih kepada kami, dapat melalui:</p>
+            <div class="gift-card">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Bank_Central_Asia.svg/1598px-Bank_Central_Asia.svg.png" alt="BCA">
+              <div class="name-rek">
+                <p>4240574191</p>
+                <p>Kaisara Pinnadit Firsti</p>
+              </div>
+              <button class="copy-btn" data-account="4240574191">Salin</button>
+            </div>
+            <div class="gift-card">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Bank_Central_Asia.svg/1598px-Bank_Central_Asia.svg.png" alt="BCA">
+              <div class="name-rek">
+                <p>4240641041</p>
+                <p>Kholifatun Nikmah</p>
+              </div>
+              <button class="copy-btn" data-account="4240614041">Salin</button>
+            </div>
+          </div>
+          <div class="comments">
+            <h2>Ucapan & Doa</h2>
+            <form id="comments-form">
+              <label for="name">Nama</label>
+              <input type="text" id="name" placeholder="Isikan Nama Anda" required />
+              
+              <label for="presence">Presensi</label>
+              <select id="presence" required>
+                <option value="" disabled selected>Konfirmasi Presensi</option>
+                <option value="hadir">Hadir</option>
+                <option value="tidak-hadir">Tidak Hadir</option>
+              </select>
+        
+              <label for="message">Ucapan & Doa</label>
+              <textarea id="message" placeholder="Tulis Ucapan dan Doa" required></textarea>
+              
+              <button type="submit" class="submit-btn">Send</button>
+            </form>
+          </div>
+        </section>
+        
+
+
+
+        <audio id="background-music" src="music/banda.mp3" loop></audio>
+        <button id="toggle-music" class="audio-control">
+            <i id="music-icon" class="fas fa-volume-up"></i>
+        </button>
+
+
+          <nav class="fixed-navbar">
+            <ul>
+              <li><a href="#home" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+              <li><a href="#bride" class="nav-link"><i class="fas fa-user-friends"></i> Mempelai</a></li>
+              <li><a href="#wedding-date" class="nav-link"><i class="fas fa-calendar-alt"></i> Tanggal</a></li>
+              <li><a href="#gallery" class="nav-link"><i class="fas fa-images"></i> Galeri</a></li>
+              <li><a href="#greetings" class="nav-link"><i class="fas fa-comment-dots"></i> Ucapan</a></li>
+            </ul>
+          </nav>
+    </section>
+
+    
+
+  
+ 
+    <div class="loading-page">
+        <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+
+            <path
+                d="M415.44 512h-95.11L212.12 357.46v91.1L125.69 512H28V29.82L68.47 0h108.05l123.74 176.13V63.45L386.69 0h97.69v461.5zM38.77 35.27V496l72-52.88V194l215.5 307.64h84.79l52.35-38.17h-78.27L69 13zm82.54 466.61l80-58.78v-101l-79.76-114.4v220.94L49 501.89h72.34zM80.63 10.77l310.6 442.57h82.37V10.77h-79.75v317.56L170.91 10.77zM311 191.65l72 102.81V15.93l-72 53v122.72z" />
+        </svg>
+
+
+        <div class="name-container">
+            <div class="logo-name">Nandit &amp; Anik</div>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+    integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./script.js"></script>
+
+</html>
