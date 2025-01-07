@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <title>Undangan Pernikahan||Nandit & Anik</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap">
@@ -19,7 +20,7 @@
     <div class="container-welcome" id="container-welcome">
             <h1>The Wedding Of</h1>
             <div class="image-wrapper">
-              <img src="images/bg.png" alt="Nandit & Anik">
+              <img src="images/overbg.png" alt="Nandit & Anik">
             </div>
             <h2>Nandit & Anik</h2>
             <button id="open-invitation" class="btn" onclick="playMusic()">Open Invitation</button>
@@ -35,7 +36,7 @@
             <div class="content-wrapper">
               <h1 class="title">Undangan Pernikahan</h1>
               <div class="profile-image-wrapper">
-                <img src="images/bg.png" alt="bg" class="profile-image" id="profile-image">
+                <img src="images/overbg.png" alt="bg" class="profile-image" id="profile-image">
             </div>
               <h2 class="subtitle">Nandit & Anik</h2>
               <p class="date" id="date-wed">Rabu, 22 Januari 2025</p>
@@ -84,7 +85,7 @@
           
 
           <section id="ayat-section">
-            <h2 class="ayat-heading">Allah Subhanahu Wa Ta'ala berfirman</h2>
+            <h2 class="ayat-heading">Allah Subhanahu Wa Ta'ala <br> Berfirman</h2>
             <div class="ayat-container">
               <div class="ayat ayat-slide-in">
                 <p>Dan segala sesuatu Kami ciptakan berpasang-pasangan agar kamu mengingat (kebesaran Allah).</p>
@@ -123,16 +124,16 @@
             </div>
           
             <div class="event-details">
-              <p>Dengan memohon rahmat dan ridho Allah Subhanahu Wa Ta'ala, insyaAllah kami akan menyelenggarakan acara:</p>
+              <p>Dengan memohon rahmat dan ridho Allah SWT, <br> insyaAllah kami akan menyelenggarakan acara:</p>
               <h2>Akad</h2>
               <p>Pukul 09.00 WIB - Selesai</p>
               <h2>Resepsi</h2>
               <p>Pukul 10.00 WIB - Selesai</p>
-              <p>Demi kehangatan bersama, kami memohon kesediaan Anda untuk mengenakan dress code berikut:</p>
+              <p>Demi kehangatan bersama, memohon kesediaan <br> Anda untuk mengenakan dress code berikut:</p>
               <h3>Betaso</h3>
               <p>Pakaian Bebas Tapi Sopan</p>
               <a href="https://goo.gl/maps" target="_blank" class="maps-button">Lihat Google Maps</a>
-              <p>RT 03 RW 02, Desa Petahunan, Kec. Pekuncen, Kab. Banyumas, Jawa Tengah 53164.</p>
+              <p>RT 03 RW 02, Desa Petahunan, Kec. Pekuncen, <br> Kab. Banyumas, Jawa Tengah 53164.</p>
             </div>
           </section>
           
@@ -145,13 +146,13 @@
           <h1 class="gallery-title">Galeri Kita</h1>
           <div class="gallery-container">
             <div class="gallery-item"><img src="images/galsatu.png" alt="Foto 1"></div>
-            <div class="gallery-item"><img src="images/galdua.png" alt="Foto 2"></div>
-            <div class="gallery-item"><img src="images/galtiga.png" alt="Foto 3"></div>
-            <div class="gallery-item"><img src="images/gal4.jpg" alt="Foto 4"></div>
-            <div class="gallery-item"><img src="images/gal5.jpg" alt="Foto 5"></div>
+            <div class="gallery-item"><img src="images/gal4.jpg" alt="Foto 2"></div>
+            <div class="gallery-item"><img src="images/gal5.jpg" alt="Foto 3"></div>
+            <div class="gallery-item"><img src="images/galdua.png" alt="Foto 4"></div>
+            <div class="gallery-item"><img src="images/galtiga.png" alt="Foto 5"></div>
             <div class="gallery-item"><img src="images/gal6.jpg" alt="Foto 6"></div>
-            <div class="gallery-item"><img src="images/gal7.jpg" alt="Foto 7"></div>
-            <div class="gallery-item"><img src="images/gal8.jpg" alt="Foto 8"></div>
+            <div class="gallery-item"><img src="images/galsep.jpg" alt="Foto 7"></div>
+            <div class="gallery-item"><img src="images/gal7.jpg" alt="Foto 8"></div>
             <div class="gallery-item"><img src="images/gal9.jpg" alt="Foto 9"></div>
           </div>
         </section>
@@ -167,7 +168,7 @@
               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Bank_Central_Asia.svg/1598px-Bank_Central_Asia.svg.png" alt="BCA">
               <div class="name-rek">
                 <p>4240574191</p>
-                <p>Kaisara Pinnadit Firsti</p>
+                <p>Kaisara Pinandit Firsti</p>
               </div>
               <button class="copy-btn" data-account="4240574191">Salin</button>
             </div>
@@ -182,23 +183,33 @@
           </div>
           <div class="comments">
             <h2>Ucapan & Doa</h2>
-            <form id="comments-form">
+            <form id="comments-form" action="https://api.web3forms.com/submit" method="POST">
+              <!-- Web3Forms API Key -->
+              <input type="hidden" name="access_key" value="238ce5f9-82f0-4e7d-9772-f2c5ba4427d5" />
+              
+              <!-- Nama -->
               <label for="name">Nama</label>
-              <input type="text" id="name" placeholder="Isikan Nama Anda" required />
+              <input type="text" id="name" name="name" placeholder="Isikan Nama Anda" required />
               
+              <!-- Presensi -->
               <label for="presence">Presensi</label>
-              <select id="presence" required>
-                <option value="" disabled selected>Konfirmasi Presensi</option>
-                <option value="hadir">Hadir</option>
-                <option value="tidak-hadir">Tidak Hadir</option>
+              <select id="presence" name="presence" required>
+                  <option value="" disabled selected>Konfirmasi Presensi</option>
+                  <option value="hadir">Hadir</option>
+                  <option value="tidak-hadir">Tidak Hadir</option>
               </select>
-        
-              <label for="message">Ucapan & Doa</label>
-              <textarea id="message" placeholder="Tulis Ucapan dan Doa" required></textarea>
               
-              <button type="submit" class="submit-btn">Send</button>
-            </form>
+              <!-- Pesan -->
+              <label for="message">Ucapan & Doa</label>
+              <textarea id="message" name="message" placeholder="Tulis Ucapan dan Doa" required></textarea>
+              
+              <!-- Tombol Submit -->
+              <button type="submit" class="submit-btn">Kirim</button>
+          </form>
+          <p>Made with &hearts; by <a href="https://instagram.com/nadzarekfaha" target="_blank">NadzareKA</a></p>
+
           </div>
+
         </section>
         
 
@@ -219,12 +230,14 @@
               <li><a href="#greetings" class="nav-link"><i class="fas fa-comment-dots"></i> Ucapan</a></li>
             </ul>
           </nav>
+
+          <div></div>
+
     </section>
 
-    
-
   
- 
+
+
     <div class="loading-page">
         <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
 

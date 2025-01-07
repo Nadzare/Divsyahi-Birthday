@@ -224,20 +224,20 @@ document.querySelectorAll('.copy-btn').forEach(button => {
 });
 
 // Handle form submission
-document.getElementById('comments-form').addEventListener('submit', (e) => {
-  e.preventDefault();
+// document.getElementById('comments-form').addEventListener('submit', (e) => {
+//   e.preventDefault();
 
-  const name = document.getElementById('name').value;
-  const presence = document.getElementById('presence').value;
-  const message = document.getElementById('message').value;
+//   const name = document.getElementById('name').value;
+//   const presence = document.getElementById('presence').value;
+//   const message = document.getElementById('message').value;
 
-  if (name && presence && message) {
-    alert('Terima kasih atas ucapan dan doa Anda!');
-    document.getElementById('comments-form').reset(); // Clear the form
-  } else {
-    alert('Harap lengkapi semua kolom!');
-  }
-});
+//   if (name && presence && message) {
+//     alert('Terima kasih atas ucapan dan doa Anda!');
+//     document.getElementById('comments-form').reset(); // Clear the form
+//   } else {
+//     alert('Harap lengkapi semua kolom!');
+//   }
+// });
 
 
 
@@ -284,8 +284,58 @@ toggleMusicButton.addEventListener('click', toggleMusic);
 
 
 
+// navbar
+// Ambil semua link di dalam navbar
+const navLinks = document.querySelectorAll('.fixed-navbar .nav-link');
+
+// Fungsi untuk menghapus kelas "active" dari semua link
+function removeActiveClass() {
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+  });
+}
+
+// Tambahkan event listener ke setiap link
+navLinks.forEach(link => {
+  link.addEventListener('click', function () {
+    // Hapus kelas "active" dari semua link
+    removeActiveClass();
+
+    // Tambahkan kelas "active" pada link yang diklik
+    this.classList.add('active');
+  });
+});
+
+
+
+
 
 
 
 
 // email
+document.getElementById("comments-form").addEventListener("submit", function (e) {
+  e.preventDefault(); // Mencegah reload halaman
+
+  const form = e.target;
+  const formData = new FormData(form);
+
+  fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: {
+          Accept: "application/json",
+      },
+  })
+  .then((response) => {
+      if (response.ok) {
+          alert("Terima kasih atas ucapan dan doa Anda!");
+          form.reset(); // Reset form setelah berhasil
+      } else {
+          alert("Harap lengkapi semua kolom!");
+      }
+  })
+  .catch(() => {
+      alert("Terjadi kesalahan saat mengirim formulir.");
+  });
+});
