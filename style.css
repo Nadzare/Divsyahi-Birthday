@@ -388,32 +388,32 @@ body {
 /* Ukuran Sangat Kecil (Di Bawah 360px) */
 @media (max-width: 360px) {
   .home-section {
-    padding: 1.5rem 0.5rem;
+    padding: 1.5rem 1rem;
     text-align: center;
   }
 
   .title {
-    font-size: 1.8rem;
-    line-height: 1.2;
+    font-size: 1.4rem;
+    line-height: 1.4;
   }
 
   .subtitle {
     font-size: 1.6rem;
-    line-height: 1.2;
+    line-height: 1.4;
   }
 
   .profile-image-wrapper {
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
   }
 
   .date {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .save-date-button {
-    padding: 0.4rem 1rem;
-    font-size: 0.85rem;
+    padding: 0.5rem 1.2rem;
+    font-size: 0.9rem;
   }
 
   .scroll-indicator {
@@ -421,27 +421,24 @@ body {
   }
 
   .scroll-text {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
   }
 
   .mouse {
-    width: 20px;
-    height: 35px;
+    width: 22px;
+    height: 36px;
   }
 
   .scroll-wheel {
-    width: 4px;
-    height: 6px;
+    width: 5px;
+    height: 8px;
   }
 }
-
-
 
 /* Default Styles for Mobile Devices */
 @media (max-width: 480px) {
   .home-section {
-    height: auto;
-    padding: 2rem 1rem;
+    padding: 2rem 1.5rem;
     text-align: center;
   }
 
@@ -451,16 +448,17 @@ body {
   }
 
   .title {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    line-height: 1.4;
   }
 
   .subtitle {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .profile-image-wrapper {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
   }
 
   .date {
@@ -468,37 +466,37 @@ body {
   }
 
   .save-date-button {
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
   }
 
   .scroll-indicator {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
   }
 
   .scroll-text {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
   }
 }
 
 /* Tablet Devices */
 @media (min-width: 481px) and (max-width: 768px) {
   .home-section {
-    height: auto;
     padding: 3rem 2rem;
   }
 
   .title {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    line-height: 1.5;
   }
 
   .subtitle {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   .profile-image-wrapper {
-    width: 230px;
-    height: 230px;
+    width: 220px;
+    height: 220px;
   }
 
   .date {
@@ -506,33 +504,33 @@ body {
   }
 
   .save-date-button {
-    padding: 0.5rem 1.2rem;
+    padding: 0.7rem 1.8rem;
     font-size: 1rem;
   }
 
   .scroll-text {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
 
 /* Small Laptop Screens */
 @media (min-width: 769px) and (max-width: 1024px) {
   .home-section {
-    height: auto;
     padding: 4rem 3rem;
   }
 
   .title {
-    font-size: 3rem;
+    font-size: 2.8rem;
+    line-height: 1.5;
   }
 
   .subtitle {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
   }
 
   .profile-image-wrapper {
-    width: 250px;
-    height: 250px;
+    width: 240px;
+    height: 240px;
   }
 
   .date {
@@ -540,7 +538,7 @@ body {
   }
 
   .save-date-button {
-    padding: 0.6rem 1.5rem;
+    padding: 0.8rem 2rem;
     font-size: 1.1rem;
   }
 
@@ -557,16 +555,17 @@ body {
   }
 
   .title {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
+    line-height: 1.5;
   }
 
   .subtitle {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
 
   .profile-image-wrapper {
-    width: 265px;
-    height: 265px;
+    width: 260px;
+    height: 260px;
   }
 
   .date {
@@ -574,7 +573,7 @@ body {
   }
 
   .save-date-button {
-    padding: 0.7rem 2rem;
+    padding: 0.9rem 2.2rem;
     font-size: 1.2rem;
   }
 
@@ -582,6 +581,7 @@ body {
     font-size: 1.1rem;
   }
 }
+
 
 
 
