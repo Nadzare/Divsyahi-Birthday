@@ -274,7 +274,7 @@ body {
     z-index: 2;
     padding: 2rem;
     color: #333;
-    margin: 20px;
+    margin: 10px;
   }
   
   /* Judul Utama */
@@ -1796,36 +1796,25 @@ button:hover {
   filter: brightness(0.8);
 }
 
-/* Extra small devices (phones less than 320px) */
-@media (max-width: 319px) {
-  #gallery h1 {
-    font-size: 1.5rem;
-  }
-
-  .gallery-item {
-    flex: 1 1 calc(100% - 15px); /* Single column on very small screens */
-  }
-}
-
-/* Very small devices (phones, less than 480px) */
+/* Extra small devices (phones less than 480px) */
 @media (max-width: 479px) {
   #gallery h1 {
     font-size: 1.8rem;
   }
 
   .gallery-item {
-    flex: 1 1 calc(100% - 15px); /* Single column */
+    flex: 1 1 calc(50% - 15px); /* Two columns */
   }
 }
 
-/* Small devices (tablets and larger phones, 480px to 767px) */
+/* Small devices (phones and tablets, 480px to 767px) */
 @media (min-width: 480px) and (max-width: 767px) {
   #gallery h1 {
     font-size: 2rem;
   }
 
   .gallery-item {
-    flex: 1 1 calc(50% - 30px); /* Two columns */
+    flex: 1 1 calc(50% - 15px); /* Two columns */
   }
 }
 
@@ -2027,7 +2016,7 @@ button:hover {
 /* Responsif untuk layar besar (desktop besar) */
 @media (min-width: 1200px) {
   .love-gift, .comments {
-    max-width: 60%; /* Menyesuaikan untuk layar besar */
+    max-width: 60%;
     padding: 40px;
   }
 
@@ -2051,21 +2040,21 @@ button:hover {
 /* Responsif untuk perangkat tablet (768px - 1024px) */
 @media (max-width: 1024px) and (min-width: 768px) {
   .love-gift, .comments {
-    max-width: 85%; /* Lebih besar untuk tablet */
+    max-width: 85%;
     padding: 25px;
   }
 
   .gift-card {
-    flex-direction: row; /* Menjaga susunan horizontal untuk tablet */
+    flex-direction: row;
     gap: 15px;
   }
 
   .gift-card img {
-    width: 50px; /* Ukuran gambar tetap */
+    width: 60px; /* Sedikit lebih besar untuk tablet */
   }
 
   .copy-btn {
-    font-size: 0.9em;
+    font-size: 1em;
   }
 
   .love-gift h2, .comments h2 {
@@ -2076,14 +2065,14 @@ button:hover {
 /* Responsif untuk perangkat ponsel sedang (600px - 768px) */
 @media (max-width: 768px) and (min-width: 600px) {
   .gift-card {
-    flex-direction: column; /* Susunan vertikal */
+    flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     text-align: center;
   }
 
   .gift-card img {
-    width: 45px; /* Mengurangi ukuran gambar */
+    width: 55px; /* Ukuran gambar proporsional */
   }
 
   .love-gift, .comments {
@@ -2095,50 +2084,51 @@ button:hover {
   }
 
   .copy-btn {
-    font-size: 0.85em;
+    font-size: 1em;
   }
 }
 
 /* Responsif untuk perangkat ponsel kecil (480px - 600px) */
 @media (max-width: 600px) and (min-width: 480px) {
   #greetings {
-    padding: 15px; /* Mengurangi padding */
+    padding: 20px;
   }
 
   .love-gift, .comments {
-    padding: 15px;
-    max-width: 100%; /* Maksimalkan lebar */
+    padding: 20px;
+    max-width: 90%; /* Memberi ruang margin */
   }
 
   .love-gift h2, .comments h2 {
-    font-size: 1.5em;
+    font-size: 1.6em; /* Lebih besar untuk visibilitas */
   }
 
   #comments-form input, #comments-form select, #comments-form textarea {
-    font-size: 0.9em;
+    font-size: 1em;
   }
 
   .submit-btn {
-    font-size: 1em;
+    font-size: 1.1em;
   }
 }
 
 /* Responsif untuk perangkat ponsel ekstra kecil (di bawah 480px) */
 @media (max-width: 480px) {
   .love-gift, .comments {
-    padding: 10px;
+    padding: 15px;
+    max-width: 100%;
   }
 
   .love-gift h2, .comments h2 {
-    font-size: 1.3em;
+    font-size: 1.5em; /* Font lebih besar untuk keterbacaan */
   }
 
   .gift-card img {
-    width: 40px; /* Ukuran gambar lebih kecil */
+    width: 50px; /* Ukuran gambar lebih jelas */
   }
 
   .copy-btn {
-    font-size: 0.8em; /* Ukuran teks button lebih kecil */
+    font-size: 0.9em; /* Font lebih proporsional */
   }
 
   .submit-btn {
@@ -2146,7 +2136,7 @@ button:hover {
   }
 
   #comments-form input, #comments-form select, #comments-form textarea {
-    font-size: 0.85em; /* Mengurangi ukuran font di ponsel kecil */
+    font-size: 1em; /* Meningkatkan ukuran font */
   }
 }
 
