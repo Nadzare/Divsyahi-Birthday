@@ -274,6 +274,7 @@ body {
     z-index: 2;
     padding: 2rem;
     color: #333;
+    margin: 20px;
   }
   
   /* Judul Utama */
@@ -364,6 +365,7 @@ body {
     background-color: #42567b;
     border-radius: 50%;
     animation: scroll 1.5s infinite;
+    margin-bottom: 20px;
   }
   
   @keyframes scroll {
@@ -383,7 +385,203 @@ body {
   }
   
  
+/* Ukuran Sangat Kecil (Di Bawah 360px) */
+@media (max-width: 360px) {
+  .home-section {
+    padding: 1.5rem 0.5rem;
+    text-align: center;
+  }
 
+  .title {
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+
+  .subtitle {
+    font-size: 1.6rem;
+    line-height: 1.2;
+  }
+
+  .profile-image-wrapper {
+    width: 150px;
+    height: 150px;
+  }
+
+  .date {
+    font-size: 0.9rem;
+  }
+
+  .save-date-button {
+    padding: 0.4rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .scroll-indicator {
+    margin-top: 1rem;
+  }
+
+  .scroll-text {
+    font-size: 0.75rem;
+  }
+
+  .mouse {
+    width: 20px;
+    height: 35px;
+  }
+
+  .scroll-wheel {
+    width: 4px;
+    height: 6px;
+  }
+}
+
+
+
+/* Default Styles for Mobile Devices */
+@media (max-width: 480px) {
+  .home-section {
+    height: auto;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .background-image {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.8rem;
+  }
+
+  .profile-image-wrapper {
+    width: 200px;
+    height: 200px;
+  }
+
+  .date {
+    font-size: 1rem;
+  }
+
+  .save-date-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .scroll-indicator {
+    margin-top: 1.5rem;
+  }
+
+  .scroll-text {
+    font-size: 0.85rem;
+  }
+}
+
+/* Tablet Devices */
+@media (min-width: 481px) and (max-width: 768px) {
+  .home-section {
+    height: auto;
+    padding: 3rem 2rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 2.2rem;
+  }
+
+  .profile-image-wrapper {
+    width: 230px;
+    height: 230px;
+  }
+
+  .date {
+    font-size: 1.1rem;
+  }
+
+  .save-date-button {
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+  }
+
+  .scroll-text {
+    font-size: 0.9rem;
+  }
+}
+
+/* Small Laptop Screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .home-section {
+    height: auto;
+    padding: 4rem 3rem;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .subtitle {
+    font-size: 2.5rem;
+  }
+
+  .profile-image-wrapper {
+    width: 250px;
+    height: 250px;
+  }
+
+  .date {
+    font-size: 1.2rem;
+  }
+
+  .save-date-button {
+    padding: 0.6rem 1.5rem;
+    font-size: 1.1rem;
+  }
+
+  .scroll-text {
+    font-size: 1rem;
+  }
+}
+
+/* Desktop Screens */
+@media (min-width: 1025px) {
+  .home-section {
+    height: 100vh;
+    padding: 5rem 4rem;
+  }
+
+  .title {
+    font-size: 3.5rem;
+  }
+
+  .subtitle {
+    font-size: 3rem;
+  }
+
+  .profile-image-wrapper {
+    width: 265px;
+    height: 265px;
+  }
+
+  .date {
+    font-size: 1.25rem;
+  }
+
+  .save-date-button {
+    padding: 0.7rem 2rem;
+    font-size: 1.2rem;
+  }
+
+  .scroll-text {
+    font-size: 1.1rem;
+  }
+}
 
 
 
@@ -655,6 +853,183 @@ button:hover {
 
 
 
+  /* Ukuran Sangat Kecil (Di Bawah 360px) */
+@media (max-width: 360px) {
+  #bride {
+    padding: 15px;
+    height: auto; /* Membiarkan tinggi menyesuaikan isi */
+    font-size: 0.9rem;
+  }
+
+  .img-center-crop {
+    width: 100px;
+    height: 100px;
+  }
+
+  .font-arabic {
+    font-size: 1.2rem;
+  }
+
+  .font-esthetic {
+    font-size: 1.5rem;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .popup img {
+    width: 200px;
+  }
+
+  .popup {
+    padding: 15px;
+  }
+
+  .popup .close {
+    font-size: 18px;
+  }
+}
+
+/* Perangkat Ponsel (360px - 480px) */
+@media (min-width: 361px) and (max-width: 480px) {
+  #bride {
+    padding: 20px;
+    height: auto;
+    font-size: 1rem;
+  }
+
+  .img-center-crop {
+    width: 120px;
+    height: 120px;
+  }
+
+  .font-arabic {
+    font-size: 1.3rem;
+  }
+
+  .font-esthetic {
+    font-size: 1.7rem;
+  }
+
+  button {
+    padding: 9px 18px;
+    font-size: 15px;
+  }
+
+  .popup img {
+    width: 220px;
+  }
+
+  .popup {
+    padding: 20px;
+  }
+}
+
+/* Perangkat Tablet (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  #bride {
+    padding: 30px;
+    height: auto;
+  }
+
+  .img-center-crop {
+    width: 140px;
+    height: 140px;
+  }
+
+  .font-arabic {
+    font-size: 1.4rem;
+  }
+
+  .font-esthetic {
+    font-size: 2rem;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .popup img {
+    width: 250px;
+  }
+
+  .popup {
+    padding: 25px;
+  }
+}
+
+/* Laptop Kecil (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  #bride {
+    padding: 40px;
+    height: auto;
+  }
+
+  .img-center-crop {
+    width: 150px;
+    height: 150px;
+  }
+
+  .font-arabic {
+    font-size: 1.5rem;
+  }
+
+  .font-esthetic {
+    font-size: 2.2rem;
+  }
+
+  button {
+    padding: 12px 25px;
+    font-size: 17px;
+  }
+
+  .popup img {
+    width: 280px;
+  }
+
+  .popup {
+    padding: 30px;
+  }
+}
+
+/* Laptop Besar dan Desktop (> 1024px) */
+@media (min-width: 1025px) {
+  #bride {
+    padding: 50px;
+    height: 100vh;
+  }
+
+  .img-center-crop {
+    width: 150px;
+    height: 150px;
+  }
+
+  .font-arabic {
+    font-size: 1.7rem;
+  }
+
+  .font-esthetic {
+    font-size: 2.5rem;
+  }
+
+  button {
+    padding: 14px 30px;
+    font-size: 18px;
+  }
+
+  .popup img {
+    width: 300px;
+  }
+
+  .popup {
+    padding: 40px;
+  }
+}
+
+
 
 
 /* Navbar Utama */
@@ -728,30 +1103,67 @@ button:hover {
     transform: scale(1.2);
 }
 
-/* Responsif untuk Layar Lebar */
+/* Responsif untuk Tablet dan Layar Lebar */
 @media screen and (min-width: 768px) {
-    .fixed-navbar a {
-        font-size: 16px;
-    }
+  .fixed-navbar {
+      padding: 12px 0;
+  }
 
-    .fixed-navbar i {
-        font-size: 24px;
-    }
+  .fixed-navbar a {
+      font-size: 16px;
+      margin: 0 10px;
+  }
+
+  .fixed-navbar i {
+      font-size: 24px;
+  }
 }
 
-/* Responsif untuk Layar Kecil */
+/* Responsif untuk Ponsel Besar (480px - 767px) */
+@media screen and (max-width: 767px) {
+  .fixed-navbar {
+      padding: 10px 0;
+  }
+
+  .fixed-navbar a {
+      font-size: 14px;
+  }
+
+  .fixed-navbar i {
+      font-size: 20px;
+  }
+}
+
+/* Responsif untuk Ponsel Kecil (di Bawah 480px) */
 @media screen and (max-width: 480px) {
-    .fixed-navbar {
-        padding: 8px 0;
-    }
+  .fixed-navbar {
+      flex-direction: column; /* Mengubah navbar menjadi kolom */
+      padding: 8px 0;
+  }
 
-    .fixed-navbar a {
-        font-size: 12px;
-    }
+  .fixed-navbar a {
+      font-size: 12px;
+      margin: 5px 0;
+  }
 
-    .fixed-navbar i {
-        font-size: 18px;
-    }
+  .fixed-navbar i {
+      font-size: 18px;
+  }
+}
+
+/* Responsif untuk Layar Sangat Kecil (di Bawah 360px) */
+@media screen and (max-width: 360px) {
+  .fixed-navbar a {
+      font-size: 10px;
+  }
+
+  .fixed-navbar i {
+      font-size: 16px;
+  }
+
+  .fixed-navbar {
+      padding: 5px 0;
+  }
 }
 
 
@@ -856,25 +1268,118 @@ button:hover {
     opacity: 1;
   }
   
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    #ayat-section {
-      background-position: center top;
-    }
-  
-    .ayat {
-      max-width: 90%;
-      padding: 20px;
-    }
-  
-    .ayat p {
-      font-size: 1.2em;
-    }
-  
-    .ayat-heading {
-      font-size: 1.8em;
-    }
+/* Responsive Styling untuk layar sangat kecil hingga besar */
+
+/* Untuk layar sangat kecil (di bawah 480px) */
+@media (max-width: 480px) {
+  #ayat-section {
+    padding: 10px;
+    background-size: cover;
+    background-position: center top;
   }
+
+  .ayat-heading {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .ayat {
+    max-width: 100%;
+    padding: 15px;
+    transform: translateY(30px);
+  }
+
+  .ayat p {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+
+  .ayat a {
+    font-size: 0.9em;
+  }
+}
+
+/* Untuk layar kecil (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  #ayat-section {
+    padding: 15px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .ayat-heading {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .ayat {
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  .ayat p {
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+
+  .ayat a {
+    font-size: 1em;
+  }
+}
+
+/* Untuk layar menengah (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  #ayat-section {
+    padding: 20px;
+  }
+
+  .ayat-heading {
+    font-size: 2.2rem;
+    margin-bottom: 35px;
+  }
+
+  .ayat {
+    max-width: 80%;
+    padding: 25px;
+  }
+
+  .ayat p {
+    font-size: 1.3em;
+  }
+
+  .ayat a {
+    font-size: 1.1em;
+  }
+}
+
+/* Untuk layar besar (1025px ke atas) */
+@media (min-width: 1025px) {
+  #ayat-section {
+    padding: 20px 50px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .ayat-heading {
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+  }
+
+  .ayat {
+    max-width: 700px;
+    padding: 30px;
+  }
+
+  .ayat p {
+    font-size: 1.4em;
+    line-height: 1.8;
+  }
+
+  .ayat a {
+    font-size: 1.2em;
+  }
+}
+
   
 
 
@@ -894,7 +1399,6 @@ button:hover {
   background-repeat: no-repeat; /* Menghindari pengulangan gambar */
   /* box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1); */
   width: 100%;
-  height: 100vh;
   color: #42567b;
 }
 
@@ -960,7 +1464,7 @@ button:hover {
 /* Responsive Design */
 /* Responsive Design */
 
-/* Untuk perangkat sangat kecil (ponsel kecil, max-width: 320px) */
+/* Perangkat sangat kecil (max-width: 320px) */
 @media (max-width: 320px) {
   .countdown-item {
     width: 45px;
@@ -978,9 +1482,13 @@ button:hover {
   .countdown-timer {
     gap: 3px; /* Jarak antar-item lebih kecil */
   }
+
+  .title-wedding-date {
+    font-size: 1.5rem;
+  }
 }
 
-/* Untuk perangkat kecil (ponsel, max-width: 480px) */
+/* Perangkat kecil (max-width: 480px) */
 @media (max-width: 480px) {
   .countdown-item {
     width: 55px;
@@ -996,11 +1504,15 @@ button:hover {
   }
 
   .countdown-timer {
-    gap: 4px; /* Kurangi jarak antar-item */
+    gap: 4px;
+  }
+
+  .title-wedding-date {
+    font-size: 1.8rem;
   }
 }
 
-/* Untuk perangkat sedang (tablet, max-width: 768px) */
+/* Perangkat sedang (max-width: 768px) */
 @media (max-width: 768px) {
   .countdown-item {
     width: 70px;
@@ -1016,11 +1528,15 @@ button:hover {
   }
 
   .countdown-timer {
-    gap: 5px; /* Sesuaikan jarak antar-item */
+    gap: 5px;
+  }
+
+  .title-wedding-date {
+    font-size: 2.2rem;
   }
 }
 
-/* Untuk perangkat besar (desktop kecil, max-width: 1024px) */
+/* Perangkat besar (max-width: 1024px) */
 @media (max-width: 1024px) {
   .countdown-item {
     width: 80px;
@@ -1036,7 +1552,35 @@ button:hover {
   }
 
   .countdown-timer {
-    gap: 6px; /* Jarak antar-item */
+    gap: 6px;
+  }
+
+  .title-wedding-date {
+    font-size: 2.5rem;
+  }
+}
+
+/* Perangkat sangat besar (min-width: 1200px) */
+@media (min-width: 1200px) {
+  .countdown-item {
+    width: 100px;
+    height: 100px;
+  }
+
+  .countdown-item span {
+    font-size: 2rem;
+  }
+
+  .countdown-item p {
+    font-size: 1rem;
+  }
+
+  .countdown-timer {
+    gap: 10px;
+  }
+
+  .title-wedding-date {
+    font-size: 2.8rem;
   }
 }
 
@@ -1088,6 +1632,113 @@ button:hover {
   box-shadow: 0 10px 25px rgba(66, 66, 66, 0.6);
   transform: translateY(-3px);
 }
+
+
+
+/* Extra small devices (phones less than 320px) */
+@media (max-width: 319px) {
+  .event-details p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .event-details h2, .event-details h3 {
+    font-size: 1.5rem;
+  }
+
+  .maps-button {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Very small devices (phones, less than 480px) */
+@media (max-width: 479px) {
+  .event-details p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .event-details h2, .event-details h3 {
+    font-size: 1.8rem;
+  }
+
+  .maps-button {
+    padding: 10px 25px;
+    font-size: 1rem;
+  }
+}
+
+/* Small devices (tablets and larger phones, 480px to 767px) */
+@media (min-width: 480px) and (max-width: 767px) {
+  .event-details p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+
+  .event-details h2, .event-details h3 {
+    font-size: 2rem;
+  }
+
+  .maps-button {
+    padding: 11px 28px;
+    font-size: 1.05rem;
+  }
+}
+
+/* Medium devices (small laptops, 768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .event-details p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+
+  .event-details h2, .event-details h3 {
+    font-size: 2.3rem;
+  }
+
+  .maps-button {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+  }
+}
+
+/* Large devices (desktops, 1025px to 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .event-details p {
+    font-size: 1.3rem;
+    line-height: 1.9;
+  }
+
+  .event-details h2, .event-details h3 {
+    font-size: 2.5rem;
+  }
+
+  .maps-button {
+    padding: 14px 35px;
+    font-size: 1.2rem;
+  }
+}
+
+/* Extra large devices (larger screens, 1441px and above) */
+@media (min-width: 1441px) {
+  .event-details p {
+    font-size: 1.4rem;
+    line-height: 2;
+  }
+
+  .event-details h2, .event-details h3 {
+    font-size: 2.8rem;
+  }
+
+  .maps-button {
+    padding: 16px 40px;
+    font-size: 1.3rem;
+  }
+}
+
+
+
 
 
 
@@ -1145,24 +1796,71 @@ button:hover {
   filter: brightness(0.8);
 }
 
-/* Tablet (768px and below) */
-@media (max-width: 768px) {
+/* Extra small devices (phones less than 320px) */
+@media (max-width: 319px) {
+  #gallery h1 {
+    font-size: 1.5rem;
+  }
+
   .gallery-item {
-    flex: 1 1 calc(50% - 20px); /* Dua kolom pada tablet */
+    flex: 1 1 calc(100% - 15px); /* Single column on very small screens */
   }
 }
 
-/* Mobile (480px and below) */
-@media (max-width: 480px) {
-  .gallery-item {
-    flex: 1 1 calc(50% - 10px); /* Dua kolom pada ponsel */
+/* Very small devices (phones, less than 480px) */
+@media (max-width: 479px) {
+  #gallery h1 {
+    font-size: 1.8rem;
   }
 
-  .gallery-container {
-    gap: 10px; /* Kurangi jarak antar item untuk tampilan kecil */
+  .gallery-item {
+    flex: 1 1 calc(100% - 15px); /* Single column */
   }
 }
 
+/* Small devices (tablets and larger phones, 480px to 767px) */
+@media (min-width: 480px) and (max-width: 767px) {
+  #gallery h1 {
+    font-size: 2rem;
+  }
+
+  .gallery-item {
+    flex: 1 1 calc(50% - 30px); /* Two columns */
+  }
+}
+
+/* Medium devices (small laptops, 768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #gallery h1 {
+    font-size: 2.5rem;
+  }
+
+  .gallery-item {
+    flex: 1 1 calc(33.333% - 30px); /* Three columns */
+  }
+}
+
+/* Large devices (desktops, 1025px to 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  #gallery h1 {
+    font-size: 2.8rem;
+  }
+
+  .gallery-item {
+    flex: 1 1 calc(33.333% - 30px); /* Three columns */
+  }
+}
+
+/* Extra large devices (larger screens, 1441px and above) */
+@media (min-width: 1441px) {
+  #gallery h1 {
+    font-size: 3em;
+  }
+
+  .gallery-item {
+    flex: 1 1 calc(33.333% - 30px); /* Three columns */
+  }
+}
 
 
 
@@ -1300,7 +1998,7 @@ button:hover {
   font-size: 1.2em;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .submit-btn:hover {
@@ -1311,6 +2009,7 @@ button:hover {
 
 .comments p{
   color: #6d82a8;
+  margin-bottom: 20px;
 }
 
 .comments p a{
@@ -1325,11 +2024,48 @@ button:hover {
   color: #446195;
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
+/* Responsif untuk layar besar (desktop besar) */
+@media (min-width: 1200px) {
   .love-gift, .comments {
-    max-width: 90%; /* Mengurangi lebar untuk layar tablet */
-    padding: 20px;
+    max-width: 60%; /* Menyesuaikan untuk layar besar */
+    padding: 40px;
+  }
+
+  .love-gift h2, .comments h2 {
+    font-size: 2.5em;
+  }
+}
+
+/* Responsif untuk perangkat tablet besar (1024px - 1200px) */
+@media (max-width: 1200px) and (min-width: 1024px) {
+  .love-gift, .comments {
+    max-width: 75%;
+    padding: 30px;
+  }
+
+  .love-gift h2, .comments h2 {
+    font-size: 2.2em;
+  }
+}
+
+/* Responsif untuk perangkat tablet (768px - 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .love-gift, .comments {
+    max-width: 85%; /* Lebih besar untuk tablet */
+    padding: 25px;
+  }
+
+  .gift-card {
+    flex-direction: row; /* Menjaga susunan horizontal untuk tablet */
+    gap: 15px;
+  }
+
+  .gift-card img {
+    width: 50px; /* Ukuran gambar tetap */
+  }
+
+  .copy-btn {
+    font-size: 0.9em;
   }
 
   .love-gift h2, .comments h2 {
@@ -1337,38 +2073,40 @@ button:hover {
   }
 }
 
-@media (max-width: 768px) {
+/* Responsif untuk perangkat ponsel sedang (600px - 768px) */
+@media (max-width: 768px) and (min-width: 600px) {
   .gift-card {
-    flex-direction: column; /* Susunan vertikal untuk layar kecil */
+    flex-direction: column; /* Susunan vertikal */
     align-items: center;
     gap: 10px;
     text-align: center;
   }
 
   .gift-card img {
-    width: 40px;
-  }
-
-  .copy-btn {
-    font-size: 0.8em;
+    width: 45px; /* Mengurangi ukuran gambar */
   }
 
   .love-gift, .comments {
-    padding: 15px;
+    padding: 20px;
   }
 
   .love-gift h2, .comments h2 {
     font-size: 1.8em;
   }
+
+  .copy-btn {
+    font-size: 0.85em;
+  }
 }
 
-@media (max-width: 480px) {
+/* Responsif untuk perangkat ponsel kecil (480px - 600px) */
+@media (max-width: 600px) and (min-width: 480px) {
   #greetings {
-    padding: 15px; /* Mengurangi padding untuk layar kecil */
+    padding: 15px; /* Mengurangi padding */
   }
 
   .love-gift, .comments {
-    padding: 10px;
+    padding: 15px;
     max-width: 100%; /* Maksimalkan lebar */
   }
 
@@ -1377,13 +2115,42 @@ button:hover {
   }
 
   #comments-form input, #comments-form select, #comments-form textarea {
-    font-size: 0.9em; /* Sedikit lebih kecil */
+    font-size: 0.9em;
   }
 
   .submit-btn {
     font-size: 1em;
   }
 }
+
+/* Responsif untuk perangkat ponsel ekstra kecil (di bawah 480px) */
+@media (max-width: 480px) {
+  .love-gift, .comments {
+    padding: 10px;
+  }
+
+  .love-gift h2, .comments h2 {
+    font-size: 1.3em;
+  }
+
+  .gift-card img {
+    width: 40px; /* Ukuran gambar lebih kecil */
+  }
+
+  .copy-btn {
+    font-size: 0.8em; /* Ukuran teks button lebih kecil */
+  }
+
+  .submit-btn {
+    font-size: 1em;
+  }
+
+  #comments-form input, #comments-form select, #comments-form textarea {
+    font-size: 0.85em; /* Mengurangi ukuran font di ponsel kecil */
+  }
+}
+
+
 
 
 
@@ -1399,8 +2166,8 @@ button:hover {
   border: none;
   border-radius: 50%;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   cursor: pointer;
   display: flex;
   align-items: center;
