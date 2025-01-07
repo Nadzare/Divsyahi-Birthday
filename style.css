@@ -388,49 +388,49 @@ body {
 /* Ukuran Sangat Kecil (Di Bawah 360px) */
 @media (max-width: 360px) {
   .home-section {
-    padding: 1.5rem 1rem;
+    padding: 2rem 1.2rem;
     text-align: center;
   }
 
   .title {
-    font-size: 1.4rem;
-    line-height: 1.4;
-  }
-
-  .subtitle {
     font-size: 1.6rem;
     line-height: 1.4;
   }
 
+  .subtitle {
+    font-size: 1.8rem;
+    line-height: 1.4;
+  }
+
   .profile-image-wrapper {
-    width: 140px;
-    height: 140px;
+    width: 160px;
+    height: 160px;
   }
 
   .date {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .save-date-button {
-    padding: 0.5rem 1.2rem;
-    font-size: 0.9rem;
+    padding: 0.6rem 1.3rem;
+    font-size: 1rem;
   }
 
   .scroll-indicator {
-    margin-top: 1rem;
+    margin-top: 1.2rem;
   }
 
   .scroll-text {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
   }
 
   .mouse {
-    width: 22px;
-    height: 36px;
+    width: 24px;
+    height: 38px;
   }
 
   .scroll-wheel {
-    width: 5px;
+    width: 6px;
     height: 8px;
   }
 }
@@ -438,7 +438,7 @@ body {
 /* Default Styles for Mobile Devices */
 @media (max-width: 480px) {
   .home-section {
-    padding: 2rem 1.5rem;
+    padding: 2.5rem 1.5rem;
     text-align: center;
   }
 
@@ -448,84 +448,50 @@ body {
   }
 
   .title {
-    font-size: 1.8rem;
-    line-height: 1.4;
+    font-size: 2rem;
+    line-height: 1.5;
   }
 
   .subtitle {
-    font-size: 1.6rem;
+    font-size: 1.9rem;
   }
 
   .profile-image-wrapper {
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
   }
 
   .date {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .save-date-button {
-    padding: 0.6rem 1.5rem;
-    font-size: 1rem;
+    padding: 0.7rem 1.5rem;
+    font-size: 1.1rem;
   }
 
   .scroll-indicator {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
 
   .scroll-text {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
 
 /* Tablet Devices */
 @media (min-width: 481px) and (max-width: 768px) {
   .home-section {
-    padding: 3rem 2rem;
+    padding: 3.5rem 2.5rem;
   }
 
   .title {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     line-height: 1.5;
   }
 
   .subtitle {
-    font-size: 2rem;
-  }
-
-  .profile-image-wrapper {
-    width: 220px;
-    height: 220px;
-  }
-
-  .date {
-    font-size: 1.1rem;
-  }
-
-  .save-date-button {
-    padding: 0.7rem 1.8rem;
-    font-size: 1rem;
-  }
-
-  .scroll-text {
-    font-size: 1rem;
-  }
-}
-
-/* Small Laptop Screens */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .home-section {
-    padding: 4rem 3rem;
-  }
-
-  .title {
-    font-size: 2.8rem;
-    line-height: 1.5;
-  }
-
-  .subtitle {
-    font-size: 2.4rem;
+    font-size: 2.3rem;
   }
 
   .profile-image-wrapper {
@@ -534,28 +500,27 @@ body {
   }
 
   .date {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .save-date-button {
-    padding: 0.8rem 2rem;
-    font-size: 1.1rem;
+    padding: 0.8rem 1.8rem;
+    font-size: 1.2rem;
   }
 
   .scroll-text {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
 
-/* Desktop Screens */
-@media (min-width: 1025px) {
+/* Small Laptop Screens */
+@media (min-width: 769px) and (max-width: 1024px) {
   .home-section {
-    height: 100vh;
-    padding: 5rem 4rem;
+    padding: 4.5rem 3rem;
   }
 
   .title {
-    font-size: 3.2rem;
+    font-size: 3rem;
     line-height: 1.5;
   }
 
@@ -569,18 +534,54 @@ body {
   }
 
   .date {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
   }
 
   .save-date-button {
-    padding: 0.9rem 2.2rem;
-    font-size: 1.2rem;
+    padding: 0.9rem 2rem;
+    font-size: 1.3rem;
   }
 
   .scroll-text {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 }
+
+/* Desktop Screens */
+@media (min-width: 1025px) {
+  .home-section {
+    height: 100vh;
+    padding: 5rem 4rem;
+  }
+
+  .title {
+    font-size: 3.5rem;
+    line-height: 1.5;
+  }
+
+  .subtitle {
+    font-size: 3rem;
+  }
+
+  .profile-image-wrapper {
+    width: 280px;
+    height: 280px;
+  }
+
+  .date {
+    font-size: 1.5rem;
+  }
+
+  .save-date-button {
+    padding: 1rem 2.2rem;
+    font-size: 1.3rem;
+  }
+
+  .scroll-text {
+    font-size: 1.3rem;
+  }
+}
+
 
 
 
