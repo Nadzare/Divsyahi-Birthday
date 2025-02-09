@@ -114,8 +114,38 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+
+
+  //popup ayat
+  document.addEventListener("DOMContentLoaded", function () {
+    const popup = document.getElementById("popup");
+    const popupImg = document.getElementById("popup-img");
+    const closeBtn = document.querySelector(".close");
+    const images = document.querySelectorAll(".voucher-img");
+
+    images.forEach(img => {
+        img.addEventListener("click", function () {
+            popup.style.display = "flex";
+            popupImg.src = this.src;
+        });
+    });
+
+    closeBtn.addEventListener("click", function () {
+        popup.style.display = "none";
+    });
+
+    popup.addEventListener("click", function (event) {
+        if (event.target === popup) {
+            popup.style.display = "none";
+        }
+    });
+});
+
+
+
+
   // Tanggal
-  // Countdown Timer Logic
+  // Countdown Timer
 function updateCountdown() {
   const eventDate = new Date("2025-01-22T09:00:00").getTime(); // Set target date
   const now = new Date().getTime();
@@ -223,21 +253,6 @@ document.querySelectorAll('.copy-btn').forEach(button => {
   });
 });
 
-// Handle form submission
-// document.getElementById('comments-form').addEventListener('submit', (e) => {
-//   e.preventDefault();
-
-//   const name = document.getElementById('name').value;
-//   const presence = document.getElementById('presence').value;
-//   const message = document.getElementById('message').value;
-
-//   if (name && presence && message) {
-//     alert('Terima kasih atas ucapan dan doa Anda!');
-//     document.getElementById('comments-form').reset(); // Clear the form
-//   } else {
-//     alert('Harap lengkapi semua kolom!');
-//   }
-// });
 
 
 
@@ -329,7 +344,7 @@ document.getElementById("comments-form").addEventListener("submit", function (e)
   })
   .then((response) => {
       if (response.ok) {
-          alert("Terima kasih atas ucapan dan doa Anda!");
+          alert("Terima kasih pesanya Divtut!");
           form.reset(); // Reset form setelah berhasil
       } else {
           alert("Harap lengkapi semua kolom!");
