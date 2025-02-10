@@ -94,7 +94,7 @@ body::-webkit-scrollbar {
 
 .logo-name {
   color: #fff;
-  font-size: 30px;
+  font-size: 25px;
   letter-spacing: 12px;
   margin-left: 20px;
   font-weight: 500;
@@ -229,13 +229,58 @@ body {
 
 
 
-
-
   #main-content {
     display: none;
     /* padding: 50px 20px; */
     background-color: #fff;
   }
+
+
+
+  /* Responsive Design */
+@media (max-width: 768px) {
+  .container-welcome h1, .container-welcome h2 {
+    font-size: 2.5rem;
+  }
+  
+  .image-wrapper {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-welcome h1, .container-welcome h2 {
+    font-size: 2rem;
+  }
+  
+  .image-wrapper {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .btn {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-welcome h1, .container-welcome h2 {
+    font-size: 4.5rem;
+  }
+  
+  .image-wrapper {
+    width: 350px;
+    height: 350px;
+  }
+}
+
 /* Welcome Page */
 
 
