@@ -237,16 +237,16 @@ body {
 
 
 
-  /* Responsive Design */
+ /* Responsive Design */
 @media (max-width: 768px) {
   .container-welcome h1, .container-welcome h2 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
   
-  /* .image-wrapper {
+  .image-wrapper {
     width: 250px;
     height: 250px;
-  } */
+  }
   
   .btn {
     font-size: 0.9rem;
@@ -256,13 +256,13 @@ body {
 
 @media (max-width: 480px) {
   .container-welcome h1, .container-welcome h2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   
-  /* .image-wrapper {
+  .image-wrapper {
     width: 200px;
     height: 200px;
-  } */
+  }
   
   .btn {
     font-size: 0.8rem;
