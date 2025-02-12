@@ -238,35 +238,51 @@ body {
 
 
  /* Responsive Design */
-@media (max-width: 768px) {
+ @media (max-width: 768px) {
   .container-welcome h1, .container-welcome h2 {
-    font-size: 3rem;
+    font-size: 2.8rem; /* Sebelumnya 2.5rem */
   }
   
-  /* .image-wrapper {
-    width: 250px;
-    height: 250px;
-  } */
+  .image-wrapper {
+    width: 280px; /* Sebelumnya 250px */
+    height: 280px;
+  }
   
   .btn {
-    font-size: 0.9rem;
-    padding: 8px 16px;
+    font-size: 1rem; /* Sebelumnya 0.9rem */
+    padding: 10px 18px;
   }
 }
 
 @media (max-width: 480px) {
   .container-welcome h1, .container-welcome h2 {
-    font-size: 2.5rem;
+    font-size: 2.3rem; /* Sebelumnya 2rem */
   }
   
-  /* .image-wrapper {
-    width: 200px;
-    height: 200px;
-  } */
+  .image-wrapper {
+    width: 220px; /* Sebelumnya 200px */
+    height: 220px;
+  }
   
   .btn {
-    font-size: 0.8rem;
-    padding: 6px 12px;
+    font-size: 0.9rem; /* Sebelumnya 0.8rem */
+    padding: 8px 14px;
+  }
+}
+
+@media (max-width: 360px) {
+  .container-welcome h1, .container-welcome h2 {
+    font-size: 1.8rem; /* Lebih kecil untuk perangkat sangat kecil */
+  }
+  
+  .image-wrapper {
+    width: 180px; /* Lebih kecil untuk perangkat kecil */
+    height: 180px;
+  }
+  
+  .btn {
+    font-size: 0.8rem; 
+    padding: 6px 10px;
   }
 }
 
@@ -275,11 +291,12 @@ body {
     font-size: 4.5rem;
   }
   
-  /* .image-wrapper {
+  .image-wrapper {
     width: 350px;
     height: 350px;
-  } */
+  }
 }
+
 
 /* Welcome Page */
 
