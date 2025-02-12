@@ -69,8 +69,8 @@ body::-webkit-scrollbar {
 }
 
 #svg {
-  height: 150px;
-  width: 150px;
+  height: 160px;
+  width: 160px;
   stroke: #fff;
   fill-opacity: 0;
   stroke-width: 3px;
@@ -240,13 +240,13 @@ body {
  /* Responsive Design */
 @media (max-width: 768px) {
   .container-welcome h1, .container-welcome h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
   
-  .image-wrapper {
+  /* .image-wrapper {
     width: 250px;
     height: 250px;
-  }
+  } */
   
   .btn {
     font-size: 0.9rem;
@@ -256,13 +256,13 @@ body {
 
 @media (max-width: 480px) {
   .container-welcome h1, .container-welcome h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   
-  .image-wrapper {
+  /* .image-wrapper {
     width: 200px;
     height: 200px;
-  }
+  } */
   
   .btn {
     font-size: 0.8rem;
@@ -275,10 +275,10 @@ body {
     font-size: 4.5rem;
   }
   
-  .image-wrapper {
+  /* .image-wrapper {
     width: 350px;
     height: 350px;
-  }
+  } */
 }
 
 /* Welcome Page */
